@@ -283,13 +283,19 @@ h3 {
   padding: 1rem 0;
 }
 
+.game-section-art {
+  width: min(100%, 320px);
+  aspect-ratio: 1 / 1;
+}
+
 .game-section-art img {
   display: block;
   width: 100%;
-  max-width: 320px;
+  height: 100%;
   border-radius: 32px;
   background: var(--panel);
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16);
+  object-fit: cover;
 }
 
 .game-section-copy p {
@@ -449,7 +455,7 @@ h3 {
   }
 
   .about-image img,
-  .game-section-art img {
+  .game-section-art {
     max-width: 260px;
     margin: 0;
   }
